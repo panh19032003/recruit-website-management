@@ -1,0 +1,99 @@
+* {
+    overflow-x: hidden;
+}
+
+.left, .right {
+    background-color: white;
+}
+
+.left-block {
+    background-color: white;
+    padding: 20px 100px;
+}
+
+.left-block-title {
+    font-family: 'Baloo';
+    font-size: 30px;
+    margin: 0px;
+    overflow: hidden;
+    text-align: center;
+    color: rgb(50, 184, 50);
+}
+.left-block_warning{
+    color: red;
+    font-weight: 300;
+}
+.input-group {
+    transition: border 0.3s, box-shadow 0.3s;
+    border: 1px solid #ced4da;
+    /* Màu viền mặc định */
+    border-radius: 0.25rem;
+    /* Đường viền bo tròn mặc định */
+}
+.input-group-prepend{
+    display: flex;
+    align-items: center;
+}
+.input-group input{
+    border: none;
+}
+.input-group-prepend span{
+    background-color: white;
+    border: none;
+}
+.input-group:focus-within {
+    border: 1px solid #007bff;
+    /* Màu viền khi input hoặc các phần tử bên trong được focus */
+    box-shadow: 0 0 5px #007bff;
+    /* Tạo hiệu ứng bóng khi focus */
+}
+
+.form-control:focus {
+    box-shadow: none;
+    /* Bỏ viền sáng khi input được focus */
+}
+.form-control::placeholder{
+    font-size: 14px;
+    align-items: center;
+}
+
+.left-block-confirm {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 13px;
+}
+.left-block-confirm_accept{
+    text-decoration: none;
+    color: rgb(8, 177, 8);
+}
+
+.left-block-check-forgot a {
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.left-block-submit {
+    background-color: #00B14F;
+    color: white;
+    font-size: 16px;
+    margin: 2px 0px;
+}
+
+.left-block-signup {
+    margin: 10px;
+    text-align: center;
+    font-size: 14px;
+    opacity: 60%;
+}
+
+.left-block-signup a {
+    text-decoration: none;
+    color: green;
+    font-weight: 500;
+}
+.error{
+    font-size: 12px;
+    color: red;
+}

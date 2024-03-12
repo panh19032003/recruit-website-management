@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*==Style cơ bản cho website==*/
+body {
+    background-color: #F5F5F5;
+    font-family: sans-serif;
+    color: #333;
+}
+
+.menu {
+    height: 70px;
+    background: #e7edf5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/* ========================= MENU LEFT =====================*/
+.menu-left {
+    margin-left: 20px;
+    flex: 1;
+}
+
+/* ========================= MENU CENTER ==================== */
+.menu-center {
+    flex: 3;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+
+}
+.menu-center-hover {
+    color: black;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 15px;
+}
+.menu-center-hover:hover {
+    color: red;
+}
+.menu_center1, .menu_center2, .menu_center3{
+    display: none;
+    position: absolute;
+    border: 1px solid none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    top: 50px;
+}
+.menu_center1{
+    width: 230px;
+    left: 190px;
+}
+.menu_center2{
+    width: 200px;
+    left: 315px;
+}
+.menu_center3{
+    width: 190px;
+    left: 460px;
+}
+.menu_center1 ul li,
+.menu_center2 ul li,
+.menu_center3 ul li{
+    margin: 16px 10px;
+    list-style: none;
+}
+.menu_center1 ul li:hover,
+.menu_center2 ul li:hover,
+.menu_center3 ul li:hover{
+    font-weight: bolder;
+}
+.menu_center1 ul li a:hover,
+.menu_center2 ul li a:hover,
+.menu_center3 ul li a:hover{
+    color: red;
+}
+.menu_center1 a,
+.menu_center2 a,
+.menu_center3 a{
+    text-decoration: none;
+    color: black;
+}
+.menu_center1.open-block1,
+.menu_center2.open-block2,
+.menu_center3.open-block3{
+    display: block;
+}
+
+
+
+
+/* =============== MENU RIGHT ========================*/
+.menu-right {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1;
+    position: relative;
+}
+
+.menu-right-hover {
+    border: 1px solid none;
+    padding: 10px 20px;
+    border-radius: 7px;
+    background-color: #2093D5;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-right-hover:hover {
+    background: #02679e;
+    color: white;
+}
+.menu_click{
+    display: none;
+    position: absolute;
+    width: 230px;
+    border: 1px solid none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    top: 60px;
+}
+.menu_click ul li{
+    margin: 16px 10px;
+    list-style: none;
+
+}
+.menu_click ul li:hover{
+    color: red;
+    font-weight: bolder;
+}
+.menu_click a{
+    text-decoration: none;
+    color: black;
+}
+.menu_click.open-block{
+    display: block;
+}
